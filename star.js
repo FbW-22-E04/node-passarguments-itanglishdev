@@ -66,4 +66,4 @@ function takeStars(numberOfStars, string) {
 takeStars()
 
 
-
+export default takeStars
