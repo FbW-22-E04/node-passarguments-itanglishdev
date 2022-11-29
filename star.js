@@ -1,6 +1,5 @@
 // console.log('the precess is ', process.argv);
 
-
 function takeStars(numberOfStars, string) {
 
     let stars = '*'

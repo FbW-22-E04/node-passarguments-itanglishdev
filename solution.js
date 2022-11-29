@@ -1,3 +1,9 @@
-const solution = () =>  require('./solution')
+// function takeStars(one, two){
+//      import('./star.js')
+// }
 
-solution()
+const takeStars = () => import('./star.js')
+
+takeStars(process.argv[2], process.argv[3])
+
+// console.log(process.argv);
