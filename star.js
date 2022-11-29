@@ -63,7 +63,7 @@ function takeStars(numberOfStars, string) {
 
 }
 
-takeStars(5,)
+takeStars()
 
 
 
