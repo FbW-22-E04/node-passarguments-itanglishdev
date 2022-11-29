@@ -6,7 +6,7 @@ function takeStars(numberOfStars, string) {
     let stars = '*'
     let printStars =''
 
-    if (numberOfStars < 1 && string === '' ) {
+    if (numberOfStars < 1 && string === '' || !string) {
         numberOfStars = 10
         
         let i = 0
@@ -22,7 +22,7 @@ function takeStars(numberOfStars, string) {
         return
     }
 
-    if (string === '') {
+    if (string === '' || !string) {
         let i = 0
         while (i < numberOfStars) {
             printStars += stars
@@ -36,7 +36,7 @@ function takeStars(numberOfStars, string) {
     }
 
 
-    if (numberOfStars < 1) {
+    if (numberOfStars < 1 || !numberOfStars) {
         numberOfStars = 10
         
         let i = 0
@@ -63,7 +63,7 @@ function takeStars(numberOfStars, string) {
 
 }
 
-takeStars(5, '')
+takeStars(5,)
 
 
 
