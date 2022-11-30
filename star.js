@@ -1,68 +1,19 @@
 // console.log('the precess is ', process.argv);
 
-function takeStars(numberOfStars, string) {
+module.exports = function (numberOfStars = 10, string ='hi') {
 
-    let stars = '*'
-    let printStars =''
+    let stars = ''
 
-    if (numberOfStars < 1 && string === '' || !string) {
-        numberOfStars = 10
-        
-        let i = 0
-        while (i < numberOfStars) {
-            printStars += stars
-            i++
-        }
-        string = 'hi'
-        
-        console.log(printStars)
-        console.log(string)
-        console.log(printStars)
-        return
+    for (let i = 0; i < numberOfStars ; i++) {
+        stars += '*'
     }
-
-    if (string === '' || !string) {
-        let i = 0
-        while (i < numberOfStars) {
-            printStars += stars
-            i++
-        }
-        string = 'hi'
-        console.log(printStars)
+    
+        console.log(stars)
         console.log(string)
-        console.log(printStars)
-        return
-    }
-
-
-    if (numberOfStars < 1 || !numberOfStars) {
-        numberOfStars = 10
-        
-        let i = 0
-        while (i < numberOfStars) {
-            printStars += stars
-            i++
-        }
-        console.log(printStars)
-        console.log(string)
-        console.log(printStars)
-        return
-    } 
-
-    let i = 0
-    while (i < numberOfStars) {
-        printStars += stars
-        i++
-    }
-        console.log(printStars)
-        console.log(string)
-        console.log(printStars)
-        return
+        console.log(stars)
+        // return
     
 
 }
 
-takeStars()
 
-
-export default takeStars
